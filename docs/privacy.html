@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UAssist Transcript — Privacy Policy</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+      color: #1e293b;
+      line-height: 1.65;
+    }
+    h1 { color: #004A80; margin-bottom: 6px; }
+    h2 { color: #0f172a; margin-top: 28px; font-size: 18px; }
+    .muted { color: #64748b; font-size: 14px; margin-bottom: 24px; }
+    code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <h1>UAssist Transcript — Privacy Policy</h1>
+  <div class="muted">Last updated: November 2026 &middot; <a href="terms.html">Terms of Use</a></div>
+
+  <p>
+    UAssist Transcript is an independent productivity tool designed to generate text transcripts from web videos and HLS streams.
+    We collect and process only the minimum data strictly required to deliver the transcription and payment verification features.
+  </p>
+
+  <h2>1. Data We Process</h2>
+  <ul>
+    <li><strong>Video Stream URLs &amp; Titles:</strong> Detected locally in your browser solely when you play a supported video stream on a page and choose to transcribe it.</li>
+    <li><strong>Local Storage:</strong> Language preference, queue items, and temporary unlock/progress states are stored locally in <code>chrome.storage</code> on your device.</li>
+    <li><strong>Payment Verification:</strong> When you pay for a transcription, a random order reference (e.g., <code>TR-XXXXXX</code>) and payment status are verified via our Google Apps Script endpoint (<code>script.google.com</code>). We do not collect or store credit card numbers or bank login credentials.</li>
+    <li><strong>Cloud Processing ("Fast Service"):</strong> Only if you explicitly choose the cloud option is the video stream URL or extracted audio from a user-selected file sent to our transcription backend solely to generate and return your <code>.txt</code> transcript. Temporary audio files are deleted immediately after processing.</li>
+    <li><strong>Browser Processing ("In Browser" / "5 min Free"):</strong> Audio from streams or user-selected files is decoded and transcribed locally inside your browser using WebAssembly without leaving your device. Model weights are fetched once from Hugging Face CDN and cached locally. For the free 5-minute trial, the generated text may optionally be sent to our backend endpoint (<code>script.google.com</code>) solely to fix speech-to-text typos and punctuation without permanent storage.</li>
+  </ul>
+
+  <h2>2. What We Do Not Do</h2>
+  <ul>
+    <li>We do <strong>not</strong> sell, rent, or trade user data to third parties.</li>
+    <li>We do <strong>not</strong> collect login credentials, browsing history, or advertising identifiers.</li>
+    <li>We do <strong>not</strong> use user data for targeted advertising, profiling, or creditworthiness checks.</li>
+  </ul>
+
+  <h2>3. Contact</h2>
+  <p>
+    For privacy questions or data removal requests, please open an issue on our GitHub repository:
+    <a href="https://github.com/ADAMBAYDH/UAssist-Public">github.com/ADAMBAYDH/UAssist-Public</a>.
+  </p>
+</body>
+</html>
